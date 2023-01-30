@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>時間計測アプリ</title>
+<link rel='stylesheet' type='text/css' href='styles.css'>
+</head>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+
+  window.onbeforeunload = function(e) {
+      // IEだとメッセージは表示される
+      e.returnValue = "このページを離れてもよろしいですか？";
+  }
+  
+</script>
+
+<body>
+  <form>
+    <p>
+      <span>
+       目標時間を設定：
+     </span>
+       <input type="number" id="sampleUserInput" value="1" min="1">
+       <span>min</span>
+       <input href="#" class="btn-flat-dashed-border" type="button" value="set" onclick="AddStringToTextarea();">
+    </p>
+    </form>
+  <!---h1>Stopwatch</h1--->
+  <div id="container">
+    <div id="time">00:00:00.000</div>
+    <div id="buttons">
+      <input id="start" type="button" value="start">
+      <input id="reset" type="button" value="upload" disabled>
+    </div>
+  </div>
+<br>
+  <div id="container" >
+    <h1>Total Time</h1>
+    <div id="sumtime">00:00:00.000</div>
+  </div>
+
+  <div class="D">REWARD &#x25BD;</div>
+  <div class="E">
+    <!---画像表示--->>
+    <input type="button" value="画像入手！" onclick="clickBtn1()" />
+    <table border="1" cellspacing="0" cellpadding="1">
+     <tr>
+      <div id="canvas-box"><img id="gazo" src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yucky78687601/20230106/20230106152825.png" border="0" alt=""></div>
+      </tr>
+    </table>
+    
+  </div>
+  
+
+<!---input type="button" value="目標達成" onclick="clickBtn1()" />
+      <table border="1" cellspacing="0" cellpadding="1">
+        <tr>
+        <div id="canvas-box"><img id="gazo" src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yucky78687601/20230106/20230106152825.png" border="0" alt=""></div>
+        </tr>
+      </table>
+      <a onclick="downloadImg()" id="download" class="btn btn-primary">画像ダウンロード</a--->
+
+
+  <script src='main.js'></script>
+</body>
+</html>

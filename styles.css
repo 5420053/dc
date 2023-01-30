@@ -1,0 +1,97 @@
+html, body {
+    font-family: 'Roboto mono';
+    font-size: 16px;
+    background-image: url("timeback.jpeg");
+  }
+  
+  h1 {
+    color: #1e90ff;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  
+  #container {
+    background-color: #ffffff;
+    width: 540px;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  #time,#sumtime,#moji {
+    color: #1e90ff;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+    margin: .5rem;
+  }
+  
+  #buttons {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  #start, #reset {
+    font-size: 2rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 20px rgba(77, 78, 79, 0.25);
+    cursor: pointer;
+  }
+
+
+  .btn-flat-dashed-border {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: dashed 1px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .btn-flat-dashed-border:hover {
+    border-style: dotted;
+    color: #1e90ff;
+  }
+
+  input[ type="number" ] {
+    border: solid 1px #ddd;
+    color: #444;
+    font-size: 20px;
+    padding: 0px;
+    line-height: 150%;
+    width: 75px;
+  }
+
+  span {
+    border-bottom: dashed 2px #ffffff;
+    color: black;
+    padding: 10px 0;
+    width: 150%;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+
+  p{
+    margin: 25px;
+  }
+
+
+.D{
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #ddd;
+    padding: 15px 60px;
+    font-size:medium;
+    font-weight: bolder;
+}
+
+.E{
+    display: none;
+}
